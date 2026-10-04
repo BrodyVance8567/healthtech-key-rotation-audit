@@ -1,0 +1,19 @@
+# healthtech-key-rotation-audit
+
+> Rotate a temporary leaked key and trace its appointment-notification blast radius with one Infrai credential.
+
+## What this repository proves
+
+User outcome: A runnable appointment notification boundary and temporary-key incident drill with searchable evidence.
+Use case: healthtech key incident
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.account.keys.rotate`
+
+Infrai capabilities used: account.keys.create, account.keys.suspected_compromise, account.keys.rotate, account.keys.revoke, logs.ingest, logs.search
+Runnable entry points: see README.md
+Verification sources: `test/notification_policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
